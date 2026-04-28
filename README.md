@@ -31,7 +31,7 @@ Os algoritmos estão divididos em dois grupos principais com base em suas caract
 
 ## 🛠️ Requisitos e Instalação
 
-- **Ambiente**: Python 3.11.7 (ou superior).
+- **Ambiente**: Python 3.11 (ou superior).
 - **Dependências**: O projeto depende exclusivamente das bibliotecas nativas do core do Python (`time`, `sys`, `pathlib`). Não é necessário instalar pacotes externos via `pip`.
 
 Para iniciar, faça o clone do repositório ou navegue até sua pasta no terminal:
@@ -43,11 +43,27 @@ cd estudo-complexidade-algoritmos
 
 ## 💻 Guia de Execução
 
-### Método Recomendado: Menu Interativo
-Para a melhor experiência, inicie o orquestrador interativo do projeto:
+### Utilizando Makefile (Comandos Rápidos)
+Para facilitar a execução por linha de comando, o projeto inclui um `Makefile` com atalhos pré-configurados:
 
 ```bash
-python3 main.py
+# Inicia o orquestrador interativo principal (main.py)
+make run
+
+# Executa apenas os algoritmos básicos (Insertion e Selection)
+make run-basic
+
+# Executa apenas os algoritmos avançados (Merge e Quick)
+make run-advanced
+```
+
+### Método Manual: Menu Interativo e Standalone
+Caso prefira não utilizar o `make`, você pode executar os arquivos Python diretamente:
+
+Para a melhor experiência e acesso completo aos testes, inicie o orquestrador interativo do projeto:
+
+```bash
+python main.py
 ```
 
 > **OBS:** Caso esteja executando o código em um ambiente Linux ou MacOS, pode ser necessário ajustar o caminho do executável `python` para `python3`.
